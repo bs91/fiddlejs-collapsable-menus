@@ -1,0 +1,14 @@
+{
+  "name": "JSFIDDLE Collapsable Menus",
+  "manifest_version": 2,
+  "version": "1.0",
+  "permissions": [
+    "http://jsfiddle/.net/*",
+	"tabs",
+	"http://www.google.com/*"
+  ],
+  "content_scripts": [ {
+  "matches":  ["http://jsfiddle.net/*"],
+  "js": ["jquery.js","contentscript.js"]
+} ]
+}
